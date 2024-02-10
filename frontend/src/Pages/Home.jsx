@@ -6,6 +6,7 @@ function Home() {
   return (
     <div>
         <Header/>
+        {/* Waxba Ku daray */}
     <div className='grid grid-cols-[170px_950px_150px] justify-between mt-5'>
         <div className='pl-4 h-screen'>
           <h1 className='font-bold'>Filter by Category</h1>
