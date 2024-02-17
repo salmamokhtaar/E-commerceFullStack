@@ -25,8 +25,8 @@ function Header() {
 
       { 
       username ? <div className='flex gap-5' >
-      <h1 className='text-black text-4xl'>Hi{JSON.parse(username).username} </h1>
-      <Link to={"/login"} onClick={Logout} >LogOut</Link>
+      <h1 className='text-black text-4xl'>Hi { JSON.parse(username).username} </h1>
+      <Link to={"/login "} onClick={Logout} >LogOut</Link>
     </div>
 
 

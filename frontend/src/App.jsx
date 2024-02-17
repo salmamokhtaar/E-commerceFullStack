@@ -4,6 +4,7 @@ import Login  from './Pages/Login'
 import Register from './Components/Register'
 import { Route,Routes } from 'react-router-dom'
 import Aboutus from './Pages/Aboutus'
+import Order from './Components/Order'
 function App() {
   return (
     <Routes>
@@ -11,6 +12,7 @@ function App() {
       <Route path='/login' element = {<Login/>}     />
       <Route path='/register' element = {<Register/>}     />
       <Route path='/about' element = {<Aboutus/>}     />
+      <Route path='/order/:id' element = {<Order/>}     />
     </Routes>
   )
 }
