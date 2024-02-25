@@ -38,7 +38,7 @@ function Order() {
       return <div className='flex justify-around items-center mt-10  '>
 
       <img className='w-[400px] mt-10  ml-[200px] rounded' src={`http://localhost:5000/images/${item.image} `}/>
- 
+  
   <div className='gap-5     w-[500px] mr-[70px]'>
       <h1 className='font-bold'>{item.name}</h1>
       <p className='semi-bold'>{item.description}</p>

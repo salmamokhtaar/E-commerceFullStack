@@ -27,14 +27,14 @@ const registerProduct =  async (req, res) => {
 const getProduct = async (req, res) => {
     try {
 
-        const {cetegory} = req.params || {}
+        const {cetegory} = req.body ||  {}
 
-        let filterData ={}
+        let filterdata ={}
         if(cetegory){
-            filterData = {cetegory}
+            filterdata = {cetegory}
         }
 
-        const getData = await productModel.find(filterData)
+        const getData = await productModel.find(filterdata)
         if (getData){
             res.send(getData)
         }
